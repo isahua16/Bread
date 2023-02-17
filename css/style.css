@@ -61,6 +61,7 @@ body {
 }
 #hero_one > p {
   font-weight: 100;
+  line-height: 22px;
 }
 #hero_one > a {
   align-self: end;
@@ -93,6 +94,7 @@ body {
   display: grid;
   place-items: center;
   gap: 12px;
+  margin-bottom: 48px;
 }
 
 .our_breads_article {
@@ -117,12 +119,91 @@ body {
 .our_breads_article > p {
   font-weight: 100;
   font-style: italic;
+  line-height: 22px;
 }
 .our_breads_article > a {
   font-weight: 200;
   text-decoration: none;
   border-bottom: 1px solid #282727;
   padding-bottom: 3px;
+}
+
+#method {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+#method_one {
+  width: 80%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  grid-template-rows: 150px auto 80px;
+  margin-bottom: 64px;
+}
+#method_one > h1 {
+  font-weight: 200;
+  font-size: 2rem;
+}
+#method_one > p {
+  font-weight: 100;
+  line-height: 22px;
+}
+#method_one > a {
+  align-self: end;
+  font-size: 0.8rem;
+  padding: 8px 50px;
+  border: 2px #282727 solid;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+#method_two {
+  width: 100%;
+}
+
+#recipe {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-image: url(/images/breadfour.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#recipe > h1 {
+  margin: 30px 0px;
+  font-weight: 200;
+  color: white;
+}
+
+#recipe_container {
+  display: grid;
+  place-items: center;
+  margin-bottom: 64px;
+}
+
+.recipe_article {
+  width: 280px;
+  display: grid;
+  align-items: center;
+  background-color: rgba(40, 39, 39, 0.7019607843);
+  padding: 20px 20px;
+  margin-bottom: 24px;
+  border-radius: 20px;
+}
+.recipe_article > h3 {
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #eeb16d;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.recipe_article > p {
+  line-height: 22px;
+  font-weight: 100;
+  font-style: italic;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
