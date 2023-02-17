@@ -90,23 +90,39 @@ body {
 }
 
 #our_breads_container {
-  width: 100%;
   display: grid;
   place-items: center;
   gap: 12px;
 }
 
 .our_breads_article {
-  width: 90%;
-  min-width: 280px;
+  width: 280px;
   display: grid;
   place-items: center;
   background-color: white;
+  text-align: center;
+  grid-template-rows: 266px 40px auto 70px;
 }
 .our_breads_article > img {
   width: 250px;
   height: 250px;
   object-fit: cover;
+  margin-top: 8px;
+}
+.our_breads_article > h3 {
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.our_breads_article > p {
+  font-weight: 100;
+  font-style: italic;
+}
+.our_breads_article > a {
+  font-weight: 200;
+  text-decoration: none;
+  border-bottom: 1px solid #282727;
+  padding-bottom: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */

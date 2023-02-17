@@ -91,21 +91,39 @@ body {
 }
 
 #our_breads_container {
-  width: 100%;
   display: grid;
   place-items: center;
   gap: 12px;
 }
 
 .our_breads_article {
-  width: 90%;
-  min-width: 280px;
+  width: 280px;
+  // height: 60vh;
   display: grid;
   place-items: center;
   background-color: white;
+  text-align: center;
+  grid-template-rows: 266px 40px auto 70px;
   > img {
     width: 250px;
     height: 250px;
     object-fit: cover;
+    margin-top: 8px;
+  }
+
+  > h3 {
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  > p {
+    font-weight: 100;
+    font-style: italic;
+  }
+  > a {
+    font-weight: 200;
+    text-decoration: none;
+    border-bottom: 1px solid #282727;
+    padding-bottom: 3px;
   }
 }
