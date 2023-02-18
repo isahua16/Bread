@@ -6,6 +6,10 @@
   color: #282727;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   background-color: #f6f6f8;
   width: 100%;
@@ -205,5 +209,165 @@ body {
     font-weight: 100;
     font-style: italic;
     color: white;
+  }
+}
+
+#breakfast {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+#breakfast_one {
+  margin: 32px 0px;
+  width: 80%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  > h1 {
+    font-size: 1.7rem;
+    font-weight: 200;
+  }
+  > a {
+    margin-top: 32px;
+    align-self: end;
+    font-size: 0.8rem;
+    padding: 8px 50px;
+    border: 2px #282727 solid;
+    border-radius: 30px;
+    text-decoration: none;
+  }
+}
+
+#breakfast_two {
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 32px;
+}
+
+#testimonials {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-image: url(/images/breadtwo.jpg);
+  background-position: center;
+  background-size: cover;
+  > h1 {
+    color: white;
+    margin: 64px 0px;
+    font-weight: 200;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+}
+
+#testimonials_container {
+  display: grid;
+  place-items: center;
+}
+
+.testimonials_article {
+  padding-top: 48px;
+  padding-bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  width: 280px;
+  display: grid;
+  place-items: center;
+  background-color: #f2952d;
+  margin-bottom: 48px;
+  > p {
+    font-style: italic;
+    color: white;
+    line-height: 22px;
+  }
+  > h3 {
+    margin-top: 24px;
+    justify-self: start;
+    color: white;
+    text-align: left;
+  }
+}
+
+#quotes {
+  width: 72px;
+  height: 72px;
+  position: absolute;
+  top: -32px;
+  left: 10px;
+}
+
+#page_footer {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-image: url(/images/breadone.jpg);
+  background-position: top -100px right -200px;
+  > h1 {
+    font-weight: 200;
+    margin: 48px 0px;
+  }
+}
+
+#form {
+  width: 80%;
+  display: grid;
+  align-items: center;
+  margin-bottom: 48px;
+  > label {
+    margin-bottom: 8px;
+  }
+  > input {
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 24px;
+  }
+}
+
+#submit_button {
+  background-color: #282727;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1.8px;
+}
+
+#info {
+  width: 80%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 48px;
+}
+
+.info_div {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin-bottom: 48px;
+  > h1 {
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 1.8px;
+  }
+}
+#hours > div {
+  display: grid;
+  place-items: center;
+  gap: 12px;
+}
+
+#call_us > div {
+  display: grid;
+  place-items: center;
+  gap: 24px;
+  > a {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-bottom: 1px solid #f2952d;
+    padding-bottom: 4px;
   }
 }
