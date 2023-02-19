@@ -49,10 +49,11 @@ body {
 }
 
 #hero_one {
-  align-self: start;
+  place-items: center;
   margin: 10px 0px;
   text-align: center;
   width: 80%;
+  max-width: 500px;
   display: grid;
   place-items: center;
   grid-template-rows: 100px 80px auto 80px;
@@ -142,6 +143,7 @@ body {
 
 #method_one {
   width: 80%;
+  max-width: 500px;
   display: grid;
   place-items: center;
   text-align: center;
@@ -314,6 +316,7 @@ body {
 
 #form {
   width: 80%;
+  max-width: 800px;
   display: grid;
   align-items: center;
   margin-bottom: 48px;
@@ -338,6 +341,7 @@ body {
 
 #info {
   width: 80%;
+  max-width: 800px;
   display: grid;
   place-items: center;
   margin-bottom: 48px;
@@ -377,10 +381,12 @@ body {
 @media only screen and (min-width: 680px) {
   #hero {
     grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
   }
 
   #hero_one {
     margin-bottom: 32px;
+    justify-self: start;
   }
   #hero_two {
     height: 100%;
@@ -433,5 +439,41 @@ body {
 
   #call_us > div {
     justify-items: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #our_breads_container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  #method {
+    column-gap: 24px;
+  }
+
+  #method_one {
+    justify-self: end;
+  }
+
+  #recipe_container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #testimonials_container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .testimonials_article {
+    margin-bottom: 96px;
+  }
+
+  #page_footer {
+    background-position: right;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  #page_footer {
+    background-size: cover;
   }
 }
