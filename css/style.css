@@ -144,7 +144,7 @@ body {
   place-items: center;
   text-align: center;
   grid-template-rows: 150px auto 80px;
-  margin-bottom: 64px;
+  margin-bottom: 32px;
 }
 #method_one > h1 {
   font-weight: 200;
@@ -189,6 +189,7 @@ body {
 
 .recipe_article {
   width: 280px;
+  height: 200px;
   display: grid;
   align-items: center;
   background-color: rgba(40, 39, 39, 0.7019607843);
@@ -271,6 +272,7 @@ body {
   padding-right: 20px;
   position: relative;
   width: 280px;
+  height: 230px;
   display: grid;
   place-items: center;
   background-color: #f2952d;
@@ -369,6 +371,58 @@ body {
   text-decoration: none;
   border-bottom: 1px solid #f2952d;
   padding-bottom: 4px;
+}
+
+@media only screen and (min-width: 680px) {
+  #hero {
+    grid-template-columns: 1fr 1fr;
+  }
+  #hero_one {
+    margin-bottom: 32px;
+  }
+  #hero_two {
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+    order: -1;
+  }
+  #our_breads_container {
+    grid-template-columns: 1fr 1fr;
+  }
+  #method {
+    grid-template-columns: 1fr 1fr;
+  }
+  #method_two {
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+  #recipe_container {
+    grid-template-columns: 1fr 1fr;
+    place-items: start;
+    column-gap: 24px;
+  }
+  #testimonials_container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+  }
+  #info {
+    align-items: start;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+  }
+  .info_div {
+    text-align: left;
+  }
+  .info_div > h1 {
+    justify-self: left;
+  }
+  #hours > div {
+    justify-items: left;
+  }
+  #call_us > div {
+    justify-items: left;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
